@@ -1,0 +1,143 @@
+script_key = ""; -- add ur key here
+
+getgenv().Yunite = {
+    ["Options"] = {
+        Intro = true,
+        ["Keybind"] = {
+            ["Silent Aim"] = "Q",
+            ["Combat Aimbot"] = "E",
+            ["Trigger Bot"] = "T",
+            ["Spin"] = "Z",
+            ["Macro"] = "X",
+            ["Speed Modifications"] = "V",  -- Toggle key for speed modifications
+            ["Visuals"] = "B"
+        },
+    },
+    ["Combat Aimbot"] = {
+        ["Enabled"] = true,
+        ["Hit Part"] = "Closest Point",
+        ["Snappiness"] = 0.011,
+        ["Prediction"] = {
+            ["X"] = 5,
+            ["Y"] = 5,
+            ["Z"] = 5
+        },
+        ["Camera Mods"] = {
+            ["Shift Locked"] = true,
+            ["Third Person"] = false,
+            ["First Person"] = true
+        }
+    },
+    ["Silent Aim"] = {
+        ["Enabled"] = true,
+        ["Prediction"] = {
+            ["X"] = 0,
+            ["Y"] = 0,
+            ["Z"] = 0
+        },
+        ["Hit Location"] = {
+            ["Type"] = "Closest Part",
+            ["Parts"] = {"Head", "UpperTorso"}
+        },
+        ["Fov"] = {
+            ["Enabled"] = true,
+            ["Size"] = {
+                ["X"] = 5,
+                ["Y"] = 5,
+                ["Z"] = 5
+            }
+        }
+    },
+    ["Trigger Bot"] = {
+        ["Enabled"] = true,
+        ["Shooting Cooldown"] = 0.01,
+        ["Weapons"] = {
+            "[Double-Barrel SG]",
+            "[Revolver]",
+            "[TacticalShotgun]"
+        },
+        ["Prediction"] = {
+            ["X"] = 0,
+            ["Y"] = 0,
+            ["Z"] = 0
+        }
+    },
+    ["Fov"] = {
+        ["X"] = 5,
+        ["Y"] = 5,
+        ["Z"] = 5
+    },
+    ["Checks"] = {
+        ["Players"] = {
+            ["Knocked"] = true,
+            ["Forcefield"] = true,
+            ["WallCheck"] = true,
+            ["Grabbed"] = true
+        },
+        ["YourSelf"] = {
+            ["SelfKnocked"] = true,
+            ["SelfGrabbed"] = true
+        }
+    },
+    ["Visuals"] = {
+        ["Enabled"] = true,
+        ["TeamCheck"] = false,
+        ["Box"] = {
+            ["Enabled"] = true,
+            ["Color"] = Color3.fromRGB(255, 0, 0)
+        },
+        ["Name"] = {
+            ["Enabled"] = true,
+            ["Color"] = Color3.fromRGB(255, 0, 0),
+            ["Size"] = 14
+        },
+        ["HealthBar"] = {
+            ["Enabled"] = true,
+            ["Color"] = Color3.fromRGB(255, 0, 0),
+            ["ShowNumbers"] = true
+        }
+    },
+    ["Speed Modifications"] = {
+        ["Options"] = {
+            ["Toggle"] = true,
+            ["Speed +5"] = "M",
+            ["Speed -5"] = "N"
+        }
+    },
+    ["HitboxExpander"] = {
+        ["Enabled"] = true,
+        ["Visualize"] = false,
+        ["NormalSize"] = 18.5,
+        ["Scaling"] = {
+            ["Enabled"] = false,
+            ["X"] = 11,
+            ["Y"] = 1.56, 
+            ["Z"] = 1
+        }
+    },
+    ["Spin"] = {
+        ["Enabled"] = true,
+        ["Degrees"] = 360,
+        ["Acceleration"] = 4000,
+        ["Directions"] = "North",
+        ["Smoothness"] = 1
+    },
+    ["Macro"] = {
+        ["Enabled"] = false,
+        ["Toggle Mode"] = false,
+        ["Hold Mode"] = true
+    },
+    ["Shooting Delay"] = {
+        ["Enable"] = true,
+        ["Gun Delay"] = 0.01
+    },
+    ["Misc"] = {
+        ["Enabled"] = true,
+        ["Specific Misc"] = {
+            ["NoJumpCoolDown"] = true,
+            ["NoRecoil"] = true,
+            ["Noseats"] = true
+            ["HugeFpsBoost"] = false  -- Set to true to enable Huge FPS Boost flags
+        }
+    }
+}
